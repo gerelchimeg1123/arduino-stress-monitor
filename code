@@ -1,0 +1,48 @@
+int pulsePin = A0;     // Heart rate sensor pin
+int ledPin = 13;       // Alert LED
+int threshold = 550;   // Pulse detection threshold
+
+unsigned long lastBeatTime = 0;
+int bpm = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+  Serial.println("Heart Rate Based Stress Monitor Started");
+}
+
+void loop() {
+  int signal = analogRead(pulsePin);
+
+  if (signal > threshold) {
+    unsigned long currentTime = millis();
+    unsigned long timeDiff = currentTime - lastBeatTime;
+
+    if (timeDiff > 300) {   // Avoid false detection
+      bpm = 60000 / timeDiff;
+      lastBeatTime = currentTime;
+
+      Serial.print("BPM: ");
+      Serial.println(bpm);
+
+      checkStressLevel(bpm);
+    }
+  }
+
+  delay(20);
+}
+
+void checkStressLevel(int bpm) {
+  if (bpm < 60) {
+    Serial.println("Stress Level: LOW");
+    digitalWrite(ledPin, LOW);
+  }
+  else if (bpm >= 60 && bpm <= 100) {
+    Serial.println("Stress Level: NORMAL");
+    digitalWrite(ledPin, LOW);
+  }
+  else {
+    Serial.println("Stress Level: HIGH");
+    digitalWrite(ledPin, HIGH); // Alert
+  }
+}
